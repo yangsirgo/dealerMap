@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import 'scss';
+@import 'base';
+
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.payment_head{
+    height: 33px;
+    padding: 32px 0 19px;
+    border-bottom: 3px solid #d6d7db;
+    color: $gray444;
+    font-size: 16px;
+    font-weight: bold;
+    .logo{
+        float: left;
+        background: url(../images/logo.jpg) center center no-repeat;
+        font-size: 16px;
+        @include size(133px, 33px);
+    }
+    .title{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #d6d7db;
+    }
+}
+
+.payment{
+    width: 1000-60px;
+    padding-top: 22px;
+    line-height: 30px;
+    .pay_complete, .pay_mode{
+        border-bottom: 1px solid #d6d7db;
+    }
+}
+
+.pay_complete{
+    padding-bottom: 30px;
+    .prompt{
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: right;
+        span{
+            float: left;
+            i{
+                color: $red_txt;
+            }
+        }
+        i{
+            @extend %red_txt;
+        }
+    }
+    .address{
+        margin-top: 22px;
+        padding: 16px 20px;
+        background: #f6f6f6;
+        color: $gray777;
+        line-height: 24px;
+        h4{
+            padding-bottom: 8px;
+            color: $gray444;
+            font-size: 16px;
+        }
+        p{
+            span{
+                float: right;
+                color: $gray444;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            i{
+                color: $red_txt;
+            }
+        }
+    }
+}
+
+.prompt_complete{
+    padding: 50px 0 210px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px;
+    p{
+        padding-bottom: 24px;
+        a{
+            color: #416eaa;
+        }
+    }
+    dt{
+        font-size: 18px;
+        em{
+            
+        }
+    }
+    dd{
+        padding: 21px 0 17px;
+        color: $gray999;
+        i{
+            padding-left: 41px;
+            color: $orange;
+        }
+    }
+    .icon{
+        display: inline-block;
+        margin-right: 12px;
+        background-image: url(../images/icon3.png);
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        @include size(40px);
+    }
+    .icon_success{
+        background-position: 0 0;
+    }
+    .icon_error{
+        background-position: 0 -80px;
+    }
+    .icon_process{
+        background-position: 0 -40px;
+    }
+    .message_btn{
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #e5e5e5;
+        background: #f1f1f1;
+        color: $gray777;
+        text-align: center;
+        line-height: 33px;
+        @include size(150px, 33px);
+        &:hover{
+            text-decoration: none;
+        }
+        &.again{
+            @extend %orange_btn;
+        }
+    }
+}
+
+.pay_mode{
+    padding: 15px 0 30px;
+    .title{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    ul{
+        overflow: hidden;
+        li{
+            width: 166px;
+            @extend %selected_box;
+        }
+    }
+}
+
+.count_down{
+    padding: 21px 0 50px;
+    text-align: right;
+    p i{
+        @extend %red_txt;
+    }
+    a{
+        @include size(152px, 50px);
+        margin-top: 9px;
+        font-weight: bold;
+        line-height: 50px;
+        @extend %red_btn;
+    }
+}
+
+.go_pop{
+    @extend %go_pop;
+}
+
+.complete_pop{
+    @include size(468px, 300px);
+    margin-left: -234px;
+    margin-top: -150px;
+    dl{
+        padding: 24px 70px 30px;
+        dt{
+            background: url(../images/icon2.png) left center no-repeat;
+            margin-bottom: 13px;
+            padding-left: 52px;
+            color: $gray444;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 44px;
+        }
+        i{
+            @extend %red_txt;
+        }
+    }
+    .btn{
+        text-align: center;
+        a{
+            @include size(125px, 35px);
+            margin: 0 5px;
+            line-height: 35px;
+            &.problem{
+                @extend %orange_btn;
+            }
+            &.complete{
+                @extend %red_btn;
+            }
+        }
+    }
+}
+
+.QR_code{
+    height: 272px;
+    margin: 15px 212px 0 ;
+    padding-top: 72px;
+    background: url(../images/QR_code.jpg) right center no-repeat;
+    font-size: 18px;
+    line-height: 30px;
+    dl{
+        width: 159px;
+        color: $gray444;
+        text-align: center;
+        dd{
+            padding: 13px;
+            margin-bottom: 7px;
+            border: 1px solid #f6f6f6;
+        }
+    }
+}
+
+.body_screen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    @include size(100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');
+    background: rgba(0,0,0,0.6);
+}

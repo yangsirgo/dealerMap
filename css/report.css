@@ -1,0 +1,144 @@
+.report__form .submit {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-align: center; }
+  .report__form .submit:hover {
+    text-decoration: none; }
+
+.report__form .submit {
+  background-color: #f6584d; }
+  .report__form .submit:hover {
+    background-color: #e84c3d; }
+
+.report_type li {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  border: 2px solid #d6d7db;
+  cursor: pointer;
+  text-align: center; }
+  .report_type li em {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    display: none;
+    width: 11px;
+    height: 11px;
+    background: url(../images/icon1.png) center center no-repeat; }
+  .report_type li:hover, .report_type li.current {
+    border-color: #f6584d; }
+  .report_type li.current em {
+    display: block; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  background-color: #fff;
+  color: #444;
+  font-size: 14px;
+  font-family: "microsoft yahei"; }
+
+li {
+  list-style-type: none; }
+
+i {
+  font-style: normal; }
+
+img {
+  vertical-align: top; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+textarea {
+  resize: none; }
+
+body {
+  background-color: #f3f3f3; }
+
+.main {
+  width: 940px;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.report {
+  padding-bottom: 50px; }
+  .report .title {
+    padding: 25px 0 15px;
+    color: #b5b5b5;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px; }
+    .report .title span {
+      padding-right: 12px;
+      color: #444;
+      font-size: 20px; }
+    .report .title i {
+      padding-right: 8px;
+      color: #e74c3c; }
+
+.report_info {
+  overflow: hidden;
+  padding: 20px;
+  background: #f6f6f6;
+  line-height: 26px; }
+  .report_info .car {
+    float: left;
+    margin-right: 29px;
+    border: 1px solid #e7e7e7;
+    width: 160px;
+    height: 120px; }
+  .report_info ul {
+    padding-top: 9px; }
+
+.report_type {
+  height: 120px;
+  overflow: hidden; }
+  .report_type li {
+    margin-bottom: 20px;
+    line-height: 46px;
+    width: 125px;
+    height: 46px; }
+
+.report__form textarea, .report__form input {
+  border: 1px solid #ddd; }
+.report__form textarea {
+  padding: 8px 12px;
+  line-height: 24px;
+  width: 848px;
+  height: 132px; }
+.report__form p {
+  position: relative;
+  padding-bottom: 50px;
+  line-height: 40px; }
+  .report__form p input[type=text] {
+    width: 210px;
+    height: 38px;
+    padding: 0 10px;
+    line-height: 38px; }
+  .report__form p span {
+    position: absolute;
+    top: 46px;
+    left: 58px;
+    color: #e74c3c;
+    font-size: 12px;
+    line-height: 26px; }
+.report__form .error input {
+  border-color: #e74c3c; }
+.report__form .submit {
+  display: block;
+  margin: 0 auto;
+  line-height: 50px;
+  width: 210px;
+  height: 50px; }
+
+/*# sourceMappingURL=report.css.map */

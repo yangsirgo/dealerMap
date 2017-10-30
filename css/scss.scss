@@ -1,0 +1,126 @@
+@function check($val){
+    @if type-of($val)=="string"{
+        @return $val;
+    }
+    @if unit($val)=="px"{
+        @return $val/($val*0+1)+px;
+    }@else if unit($val)=="rem"{
+        @return $val/($val*0+1)/200+rem;
+    }@else{
+        @return $val;
+    }
+}
+
+@mixin size($width, $height: null){
+    @if $height==null{
+        width: check($width);
+        height: check($width);
+    }@else{
+        width: check($width);
+        height: check($height);
+    }
+}
+
+$box-ratio:(
+    ratio43: 3/4,
+    ratio169: 9/16
+);
+@mixin ratio($val, $ratio){
+    width: check($val);
+    height: check($val*map-get($box-ratio, $ratio));
+}
+
+$white: #fff;
+$blue: #41a1de;
+$gray777: #777;
+$gray999: #999;
+$gray444: #444;
+$red_txt: #e74c3c;
+%red_txt{
+    color: $red_txt;
+}
+%red_btn, %orange_btn{
+    display: inline-block;
+    color: $white;
+    font-size: 16px;
+    text-align: center;
+    &:hover{
+        text-decoration: none;
+    }
+}
+$red_btn: #f6584d;
+%red_btn{
+    background-color: $red_btn;
+    border-color: $red_btn;
+    &:hover{
+        background-color: #e84c3d;
+    }
+}
+$orange: #ff9201;
+%orange_btn{
+    background-color: $orange;
+    &:hover{
+        background-color: #fc8301;
+    }
+}
+%pink_btn{
+    border: 1px solid #fe4b4f;
+    background-color: #fdf0f0;
+    color: $red_txt;
+    &:hover{
+        background-color: #fe4b4f;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+%go_pop{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+    background-color: $white;
+    color: $gray777;
+    line-height: 24px;
+    .title{
+        height: 42px;
+        overflow: hidden;
+        padding-left: 10px;
+        background-color: $blue;
+        color: $white;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 42px;
+        a{
+            display: block;
+            float: right;
+            background: url(../images/pop_close.png) center center no-repeat;
+            @include size(42px);
+        }
+    }
+}
+
+%selected_box{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid #d6d7db;
+    cursor: pointer;
+    color: $gray444;
+    text-align: center;
+    em{
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        display: none;
+        @include size(11px);
+        background: url(../images/icon1.png) center center no-repeat;
+    }
+    &:hover, &.current{
+        border-color: $red_btn;
+        text-decoration: none;
+    }
+    &.current em{
+        display: block;
+    }
+}

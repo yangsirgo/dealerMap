@@ -1,0 +1,203 @@
+.layer_landed .landed_btn .btn, .invoice_box .btn .btn_a {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-align: center; }
+  .layer_landed .landed_btn .btn:hover, .invoice_box .btn .btn_a:hover {
+    text-decoration: none; }
+
+.layer_landed .landed_btn .btn, .invoice_box .btn .btn_a {
+  background-color: #f6584d;
+  border-color: #f6584d; }
+  .layer_landed .landed_btn .btn:hover, .invoice_box .btn .btn_a:hover {
+    background-color: #e84c3d; }
+
+.address_box .btn_a, .invoice_box .btn .btn_b {
+  border: 1px solid #fe4b4f;
+  background-color: #fdf0f0;
+  color: #e74c3c; }
+  .address_box .btn_a:hover, .invoice_box .btn .btn_b:hover {
+    background-color: #fe4b4f;
+    color: #fff;
+    text-decoration: none; }
+
+.invoice_box .choice_box a {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  border: 2px solid #d6d7db;
+  cursor: pointer;
+  color: #444;
+  text-align: center; }
+  .invoice_box .choice_box a em {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    display: none;
+    width: 11px;
+    height: 11px;
+    background: url(../images/icon1.png) center center no-repeat; }
+  .invoice_box .choice_box a:hover, .invoice_box .choice_box a.current {
+    border-color: #f6584d;
+    text-decoration: none; }
+  .invoice_box .choice_box a.current em {
+    display: block; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  background-color: #fff;
+  color: #444;
+  font-size: 14px;
+  font-family: "microsoft yahei"; }
+
+li {
+  list-style-type: none; }
+
+i {
+  font-style: normal; }
+
+img {
+  vertical-align: top; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+textarea {
+  resize: none; }
+
+.layer_landed {
+  font-size: 12px; }
+  .layer_landed .binding_txt {
+    padding-top: 43px; }
+  .layer_landed .landed_con {
+    padding-top: 27px; }
+  .layer_landed .title {
+    background-color: #fe4b4f; }
+  .layer_landed .close {
+    background-image: url(../images/landing-bg.gif);
+    background-position: left top; }
+    .layer_landed .close:hover {
+      background-position: left bottom; }
+  .layer_landed .landed_con .tel_text:hover,
+  .layer_landed .landed_con .dynamic_passwrod:hover,
+  .layer_landed .landed_con .codes_text:hover {
+    border-color: #aaa; }
+  .layer_landed .obtain_code {
+    background: #fdf0f0;
+    border-color: #fdf0f0;
+    color: #e74c3c; }
+    .layer_landed .obtain_code:hover {
+      border-color: #fe4b4f;
+      background-color: #fe4b4f; }
+  .layer_landed .recovery_code {
+    font-size: 12px; }
+  .layer_landed .landed_btn .btn {
+    display: block; }
+
+.layer {
+  width: 570px;
+  height: 520px;
+  margin-left: -285px;
+  margin-top: -265px; }
+  .layer table {
+    width: 100%; }
+  .layer .title {
+    height: 50px;
+    line-height: 50px; }
+    .layer .title .close {
+      right: 0;
+      width: 40px;
+      height: 50px;
+      background-image: url(../images/posts_bg.gif);
+      background-position: left top; }
+      .layer .title .close:hover {
+        background-position: left bottom; }
+  .layer .psw_con {
+    padding: 50px 0 54px; }
+    .layer .psw_con td {
+      position: relative;
+      height: 60px;
+      vertical-align: top;
+      color: #444;
+      font-family: "microsoft yahei";
+      line-height: 34px; }
+    .layer .psw_con .default {
+      color: #999;
+      font-size: 12px;
+      line-height: 22px; }
+  .layer .td_lt {
+    width: 152px;
+    padding-right: 20px; }
+  .layer .int_wth, .layer .selectbox, .layer .selectem, .layer .selecttxt {
+    height: 34px;
+    line-height: 34px; }
+  .layer .int_wth, .layer .selectbox {
+    border: 1px solid #d8d7dc; }
+  .layer .int_wth {
+    width: 314px; }
+  .layer .selectbox {
+    position: relative;
+    width: 98px; }
+    .layer .selectbox .selectem {
+      background-image: url(../images/select.gif);
+      background-position: right 0; }
+      .layer .selectbox .selectem:hover {
+        background-position: right -34px; }
+    .layer .selectbox .selectbox_on {
+      border: none;
+      background-position: right -66px; }
+    .layer .selectbox .option {
+      top: 34px; }
+      .layer .selectbox .option li {
+        cursor: pointer; }
+        .layer .selectbox .option li:hover {
+          background-color: #f6f6f6; }
+          .layer .selectbox .option li:hover a {
+            color: #e74c3c;
+            text-decoration: underline; }
+  .layer .btn_a, .layer .btn_b {
+    width: 138px;
+    height: 34px;
+    line-height: 34px; }
+
+.address_box .error_txt {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 4px;
+  color: #e74c3c;
+  font-size: 12px; }
+.address_box .error .error_txt {
+  display: block; }
+.address_box .error input, .address_box .error .selectbox {
+  border-color: #e74c3c; }
+.address_box .default span {
+  display: block;
+  padding-bottom: 10px; }
+
+.invoice_box {
+  width: 649px;
+  height: 575px;
+  margin-left: -324.5px;
+  margin-top: -287.5px; }
+  .invoice_box .choice_box a {
+    width: 96px;
+    height: 32px;
+    line-height: 32px; }
+  .invoice_box .default {
+    padding-bottom: 108px; }
+  .invoice_box .btn {
+    padding-top: 0;
+    border-color: transparent; }
+    .invoice_box .btn a {
+      display: inline-block; }
+
+/*# sourceMappingURL=login.css.map */

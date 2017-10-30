@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import 'scss';
+@import 'base';
+
+body{
+    background-color: #f3f3f3;
+}
+
+.main{
+    width: 1000-60px;
+    padding: 0 30px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.report{
+    padding-bottom: 50px;
+   .title{
+        padding: 25px 0 15px;
+        color: #b5b5b5;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
+        span{
+            padding-right: 12px;
+            color: $gray444;
+            font-size: 20px;
+        }
+        i{
+            padding-right: 8px;
+            color: $red_txt;
+        }
+    }
+}
+
+.report_info{
+    overflow: hidden;
+    padding: 20px;
+    background: #f6f6f6;
+    line-height: 26px;
+    .car{
+        float: left;
+        margin-right: 29px;
+        border: 1px solid #e7e7e7;
+        @include ratio(160px, ratio43);
+    }
+    ul{
+        padding-top: 9px;
+    }
+}
+
+.report_type{
+    height: 120px;
+    overflow: hidden;
+    li{
+        margin-bottom: 20px;
+        line-height: 46px;
+        @include size(125px, 46px);
+        @extend %selected_box;
+    }
+}
+
+.report__form{
+    textarea, input{
+        border: 1px solid #ddd;
+    }
+    textarea{
+        padding: 8px 12px;
+        line-height: 24px;
+        @include size(848px, 132px);
+    }
+    p{
+        position: relative;
+        padding-bottom: 50px;
+        line-height: 40px;
+        input[type=text]{
+            @include size(210px, 38px);
+            padding: 0 10px;
+            line-height: 38px;
+        }
+        span{
+            position: absolute;
+            top: 46px;
+            left: 58px;
+            color: $red_txt;
+            font-size: 12px;
+            line-height: 26px;
+        }
+    }
+    .error{
+        input{
+            border-color: $red_txt;
+        }
+    }
+    .submit{
+        display: block;
+        margin: 0 auto;
+        line-height: 50px;
+        @include size(210px, 50px);
+        @extend %red_btn;
+    }
+}

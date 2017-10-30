@@ -1,0 +1,269 @@
+.pay_complete .prompt i, .count_down p i, .complete_pop dl i {
+  color: #e74c3c; }
+
+.count_down a, .complete_pop .btn a.complete, .prompt_complete .message_btn.again, .complete_pop .btn a.problem {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-align: center; }
+  .count_down a:hover, .complete_pop .btn a.complete:hover, .prompt_complete .message_btn.again:hover, .complete_pop .btn a.problem:hover {
+    text-decoration: none; }
+
+.count_down a, .complete_pop .btn a.complete {
+  background-color: #f6584d; }
+  .count_down a:hover, .complete_pop .btn a.complete:hover {
+    background-color: #e84c3d; }
+
+.prompt_complete .message_btn.again, .complete_pop .btn a.problem {
+  background-color: #ff9201; }
+  .prompt_complete .message_btn.again:hover, .complete_pop .btn a.problem:hover {
+    background-color: #fc8301; }
+
+.go_pop {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  background-color: #fff;
+  color: #777;
+  line-height: 24px; }
+  .go_pop .title {
+    height: 42px;
+    overflow: hidden;
+    padding-left: 10px;
+    background-color: #41a1de;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 42px; }
+    .go_pop .title a {
+      display: block;
+      float: right;
+      background: url(../images/pop_close.png) center center no-repeat;
+      width: 42px;
+      height: 42px; }
+
+.pay_mode ul li {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  border: 2px solid #d6d7db;
+  cursor: pointer;
+  text-align: center; }
+  .pay_mode ul li em {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    display: none;
+    width: 11px;
+    height: 11px;
+    background: url(../images/icon1.png) center center no-repeat; }
+  .pay_mode ul li:hover, .pay_mode ul li.current {
+    border-color: #f6584d; }
+  .pay_mode ul li.current em {
+    display: block; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  background-color: #fff;
+  color: #444;
+  font-size: 14px;
+  font-family: "microsoft yahei"; }
+
+li {
+  list-style-type: none; }
+
+i {
+  font-style: normal; }
+
+img {
+  vertical-align: top; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+textarea {
+  resize: none; }
+
+.main {
+  width: 1000px;
+  margin: 0 auto; }
+
+.payment_head {
+  height: 33px;
+  padding: 32px 0 19px;
+  border-bottom: 3px solid #d6d7db;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold; }
+  .payment_head .logo {
+    float: left;
+    background: url(../images/logo.jpg) center center no-repeat;
+    font-size: 16px;
+    width: 133px;
+    height: 33px; }
+  .payment_head .title {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #d6d7db; }
+
+.payment {
+  width: 940px;
+  padding-top: 22px;
+  line-height: 30px; }
+  .payment .pay_complete, .payment .pay_mode {
+    border-bottom: 1px solid #d6d7db; }
+
+.pay_complete {
+  padding-bottom: 30px; }
+  .pay_complete .prompt {
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right; }
+    .pay_complete .prompt span {
+      float: left; }
+      .pay_complete .prompt span i {
+        color: #e74c3c; }
+  .pay_complete .address {
+    margin-top: 22px;
+    padding: 16px 20px;
+    background: #f6f6f6;
+    color: #777;
+    line-height: 24px; }
+    .pay_complete .address h4 {
+      padding-bottom: 8px;
+      color: #444;
+      font-size: 16px; }
+    .pay_complete .address p span {
+      float: right;
+      color: #444;
+      font-size: 16px;
+      font-weight: bold; }
+    .pay_complete .address p i {
+      color: #e74c3c; }
+
+.prompt_complete {
+  padding: 50px 0 210px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px; }
+  .prompt_complete p {
+    padding-bottom: 24px; }
+    .prompt_complete p a {
+      color: #416eaa; }
+  .prompt_complete dt {
+    font-size: 18px; }
+  .prompt_complete dd {
+    padding: 21px 0 17px;
+    color: #999; }
+    .prompt_complete dd i {
+      padding-left: 41px;
+      color: #ff9201; }
+  .prompt_complete .icon {
+    display: inline-block;
+    margin-right: 12px;
+    background-image: url(../images/icon3.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px; }
+  .prompt_complete .icon_success {
+    background-position: 0 0; }
+  .prompt_complete .icon_error {
+    background-position: 0 -80px; }
+  .prompt_complete .icon_process {
+    background-position: 0 -40px; }
+  .prompt_complete .message_btn {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    background: #f1f1f1;
+    color: #777;
+    text-align: center;
+    line-height: 33px;
+    width: 150px;
+    height: 33px; }
+    .prompt_complete .message_btn:hover {
+      text-decoration: none; }
+
+.pay_mode {
+  padding: 15px 0 30px; }
+  .pay_mode .title {
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold; }
+  .pay_mode ul {
+    overflow: hidden; }
+    .pay_mode ul li {
+      width: 166px; }
+
+.count_down {
+  padding: 21px 0 50px;
+  text-align: right; }
+  .count_down a {
+    width: 152px;
+    height: 50px;
+    margin-top: 9px;
+    font-weight: bold;
+    line-height: 50px; }
+
+.complete_pop {
+  width: 468px;
+  height: 300px;
+  margin-left: -234px;
+  margin-top: -150px; }
+  .complete_pop dl {
+    padding: 24px 70px 30px; }
+    .complete_pop dl dt {
+      background: url(../images/icon2.png) left center no-repeat;
+      margin-bottom: 13px;
+      padding-left: 52px;
+      color: #444;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 44px; }
+  .complete_pop .btn {
+    text-align: center; }
+    .complete_pop .btn a {
+      width: 125px;
+      height: 35px;
+      margin: 0 5px;
+      line-height: 35px; }
+
+.QR_code {
+  height: 272px;
+  margin: 15px 212px 0;
+  padding-top: 72px;
+  background: url(../images/QR_code.jpg) right center no-repeat;
+  font-size: 18px;
+  line-height: 30px; }
+  .QR_code dl {
+    width: 159px;
+    color: #444;
+    text-align: center; }
+    .QR_code dl dd {
+      padding: 13px;
+      margin-bottom: 7px;
+      border: 1px solid #f6f6f6; }
+
+.body_screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');
+  background: rgba(0, 0, 0, 0.6); }
+
+/*# sourceMappingURL=complete.css.map */

@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import 'scss';
+@import 'base';
+
+$red_login: #fe4b4f;
+.layer_landed{
+    font-size: 12px;
+    .binding_txt{
+        padding-top: 43px;
+    }
+    .landed_con{
+        padding-top: 27px;
+    }
+    .title{
+        background-color: $red_login;
+    }
+     .close{
+        background-image: url(../images/landing-bg.gif);
+        background-position: left top;
+        &:hover{
+            background-position: left bottom;
+        }
+    }
+    .landed_con .tel_text:hover,
+    .landed_con .dynamic_passwrod:hover,
+    .landed_con .codes_text:hover{
+        border-color: #aaa;
+    }
+    .obtain_code{
+        background: #fdf0f0;
+        border-color: #fdf0f0;
+        color: $red_txt;
+        &:hover{
+            border-color: $red_login;
+            background-color: $red_login;
+        }
+    }
+    .recovery_code{
+        font-size: 12px;
+    }
+    .landed_btn .btn{
+        display: block;
+        @extend %red_btn;
+    }
+}
+
+.layer{
+    @include size(570px, 520px);
+    margin-left: -285px;
+    margin-top: -265px;
+    table{
+        width: 100%;
+    }
+    .title{
+        height: 50px;
+        line-height: 50px;
+        .close{
+            right: 0;
+            @include size(40px, 50px);
+            background-image: url(../images/posts_bg.gif);
+            background-position: left top;
+            &:hover{
+                background-position: left bottom;
+            }
+        }
+    }    
+    .psw_con{
+        padding: 50px 0 54px;
+        td{
+            position: relative;
+            height: 60px;
+            vertical-align: top;
+            color: $gray444;
+            font-family: "microsoft yahei";
+            line-height: 34px;
+        }
+        .default{
+            color: $gray999;
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+    .td_lt{
+        width: 152px;
+        padding-right: 20px;
+    }
+    .int_wth, .selectbox, .selectem, .selecttxt{
+        height: 34px;
+        line-height: 34px;
+    }
+    .int_wth, .selectbox{
+        border: 1px solid #d8d7dc;
+    }
+    .int_wth{
+        width: 314px;
+    }
+    .selectbox{
+        position: relative;
+        width: 98px;
+        .selectem{
+            background-image: url(../images/select.gif);
+            background-position: right 0;
+            &:hover{
+                background-position: right -34px;
+            }
+        }
+        .selectbox_on{
+            border: none;
+            background-position: right -66px;
+        }
+        .option{
+            top: 34px;
+            li{
+                cursor: pointer;
+                &:hover{
+                    background-color: #f6f6f6;               
+                    a{
+                        color: $red_txt;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .btn_a, .btn_b{
+        @include size(138px, 34px);
+        line-height: 34px;
+    }
+}
+
+.address_box{
+    .error_txt{
+        display: none;
+        position: absolute;
+        top: 32px;
+        left: 4px;
+        color: $red_txt;
+        font-size: 12px;
+    }
+    .error{
+        .error_txt{
+            display: block;
+        }
+        input, .selectbox{
+            border-color: $red_txt;
+        }
+    }
+    .default span{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .btn_a{
+        @extend %pink_btn;
+    }
+}
+
+.invoice_box{
+    @include size(649px, 575px);
+    margin-left: -324.5px;
+    margin-top: -287.5px;
+    .choice_box{
+        a{
+            @include size(96px, 32px);
+            @extend %selected_box;
+            line-height: 32px;
+        }
+    }
+    .default{
+        padding-bottom: 108px;
+    }
+    .btn{
+        padding-top: 0;
+        border-color: transparent;
+        a{
+            display: inline-block;
+        }
+        .btn_a{
+            @extend %red_btn;
+        }
+        .btn_b{
+            @extend %pink_btn;
+        }
+    }
+}
